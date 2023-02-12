@@ -1,0 +1,66 @@
+.cart-items {
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+  max-height: 50vh;
+}
+
+.cart-list {
+  overflow-y: scroll;
+}
+
+.amount {
+  color: #411900;
+  font-size: 2rem;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.6rem;
+}
+
+.btn-cancel,
+.btn-order {
+  width: 12rem;
+  height: 4rem;
+  border: none;
+  border-radius: 100rem;
+
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.btn-cancel {
+  border: 0.1rem solid #411900;
+  color: #411900;
+  background-color: #f0d7a7;
+}
+
+.btn-cancel:hover {
+  background-color: #d8c296;
+}
+
+.btn-order {
+  background-color: #411900;
+  color: #f0d7a7;
+}
+
+.btn-order:hover {
+  background-color: #341400;
+}

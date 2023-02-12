@@ -1,0 +1,125 @@
+.button-wrapper {
+  background-color: #de3163;
+  position: fixed;
+  height: 8rem;
+  width: 100vw;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+
+  background-color: #411900;
+  color: #f0d7a7;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+
+  padding: 1.2rem 2.4rem;
+  border-radius: 100rem;
+  border: none;
+  z-index: 100;
+
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: #2e1200;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: #f0d7a7;
+  color: #411900;
+  border-radius: 50%;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+    background-color: #2e1200;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #411900;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .button {
+    position: fixed;
+    top: 4rem;
+    right: 6.4rem;
+    transform: translateY(-50%);
+  }
+
+  .button-wrapper {
+    position: relative;
+    height: 0;
+  }
+
+  @keyframes bump {
+    0% {
+      top: 1.3rem;
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    30% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.15);
+      background-color: #2e1200;
+      transform: translateY(0%);
+    }
+    100% {
+      transform: scale(1);
+      background-color: #411900;
+      top: 1.3rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .button {
+    right: 12rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .button {
+    right: 28rem;
+  }
+}

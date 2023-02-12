@@ -1,0 +1,70 @@
+.meals-section {
+  background-color: #411900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 2rem;
+  padding-bottom: 14rem;
+}
+
+.meals {
+  background-color: #411900;
+  width: 100%;
+}
+
+.list {
+  background-color: #f0d7a7;
+  border-radius: 0.8rem;
+  border-top-left-radius: 0;
+  padding: 0 3.2rem;
+
+  z-index: 10;
+}
+
+.btn-list {
+  background-color: #f0d7a7;
+  height: 4rem;
+  width: 12rem;
+  border: none;
+  text-transform: uppercase;
+  color: #411900;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.btn-meals {
+  border-top-left-radius: 0.8rem;
+}
+
+.btn-drinks {
+  border-top-right-radius: 0.8rem;
+}
+
+.btn-inactive {
+  cursor: pointer;
+  background-color: #c0ac86;
+}
+
+.btn-inactive:hover {
+  background-color: #d8c296;
+}
+
+@media only screen and (min-width: 600px) {
+  .meals-section {
+    padding: 4rem 6.4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .meals-section {
+    padding: 4rem 12rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .meals-section {
+    padding: 4rem 28rem;
+  }
+}
